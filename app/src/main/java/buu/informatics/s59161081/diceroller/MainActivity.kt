@@ -9,7 +9,7 @@ import android.widget.Toast
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
-    lateinit  var diceImage: ImageView? = null
+    lateinit var diceImage: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.dice_5
             else -> R.drawable.dice_6
         }
-        diceImage?.setImageResource(drawableResource)
+        diceImage.setImageResource(drawableResource)
 
     }
     private fun rollReset(){
